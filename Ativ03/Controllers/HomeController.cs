@@ -13,16 +13,14 @@ namespace Ativ03.Controllers
             return View();
         }
 
-        public ActionResult Credits()
+        public ActionResult Menu()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Credits()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "All credits reserved to BANDAI and Akiyoshi Hongo.";
 
             return View();
         }

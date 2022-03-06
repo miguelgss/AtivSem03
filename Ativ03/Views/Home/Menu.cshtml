@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Menu";
+}
+
+<h2>Menu</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Digimon List</h2>
+        <p>
+            Click on the button bellow to acess the Digimon List. You can Create, Read, Update and Delete informations in it.
+        </p>
+        <div class="btn btn-default">
+            @Html.ActionLink("Digimon","Index", "Digimon")
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Tamer List</h2>
+            <p>
+                Click on the button bellow to acess the Tamers List. You can Create, Read, Update and Delete informations in it.
+            </p>
+            <div class="btn btn-default">
+                @Html.ActionLink("Tamer", "Index", "Tamer")
+            </div>
+        </div>
+
