@@ -9,7 +9,7 @@ Projeto feito em ASP.NET e Entity Framework no Visual Studio 2019. É possível 
 ![image](https://user-images.githubusercontent.com/70229703/156910260-7fcc6ce1-dce6-4407-b234-9bc5b2b9224d.png)
 
 - Após indicar a rota corretamente, utilize o comando get-help entityframework para ver os comandos relacionados a migrações e atualizações.
-- Utilize o arquivo SQL incluído no projeto para acrescentar informações ao banco de dados.
+- Utilize o arquivo SQL incluído no projeto (ScriptTabelas.sql) para acrescentar informações ao banco de dados.
 
 ***
 
