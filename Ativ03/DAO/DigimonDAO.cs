@@ -25,7 +25,6 @@ namespace Ativ03.DAO
                 digiUpdate.Stage = digimon.Stage;
                 digiUpdate.Type = digimon.Type;
 
-                BD.Digimons.Add(digiUpdate);
             }
             else // Caso não exista...CREATE!
             {

@@ -129,6 +129,7 @@
     <Compile Include="Controllers\DigimonController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TamerController.cs" />
+    <Compile Include="DAO\TamerDAO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -187,6 +188,9 @@
     <Content Include="Views\Digimon\Edit.cshtml" />
     <Content Include="Views\Digimon\Delete.cshtml" />
     <Content Include="Views\Home\Menu.cshtml" />
+    <Content Include="Views\Tamer\Create.cshtml" />
+    <Content Include="Views\Tamer\Edit.cshtml" />
+    <Content Include="Views\Tamer\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -10,7 +10,7 @@ namespace Ativ03.Controllers
 {
     public class DigimonController : Controller
     {
-        private DigimonDAO digimonDAO;
+        private readonly DigimonDAO digimonDAO;
         // GET: Digimon
 
         public DigimonController()
@@ -48,7 +48,7 @@ namespace Ativ03.Controllers
             {
                 return HttpNotFound();
             }
-            return View();
+            return View(digimon);
         }
 
         [HttpPost]
@@ -70,16 +70,15 @@ namespace Ativ03.Controllers
             {
                 return HttpNotFound();
             }
-            return View();
+            return View(digimon);
         }
 
-        [HttpDelete, ActionName("Delete")]
+        [HttpPost, ActionName("Delete")] // Action name permite fazer uma espécie de "sobreposição" da função acima.
         public ActionResult ReallyDelete(int id) // Ao receber um id, permite excluí-lo
         {
             var digimon = digimonDAO.SearchByID(id);
             digimonDAO.Delete(digimon);
             return RedirectToAction("Index");
         }
-
     }
 }
