@@ -20,7 +20,7 @@ namespace Ativ03.Controllers
 
         public ActionResult Credits()
         {
-            ViewBag.Message = "All credits reserved to BANDAI and Akiyoshi Hongo.";
+            ViewBag.Message = "All credits reserved to BANDAI.";
 
             return View();
         }
